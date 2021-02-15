@@ -1,0 +1,318 @@
+/*
+print output:
+    window.alert("hello world")
+    window.console.log("hello ya user")
+    document.getElementById("test").innerHTML="ay7aga"
+    document.write("hello")==>for testing purposes
+
+*/
+
+/**
+ ; is optional but it is good to use for systematic and to avoid error
+ when minifying the file
+ */
+/**
+ * line length
+ * line break
+ * 
+ */
+/*
+    1.change html element content
+        document.getElementById("one").innerHTML="Mahmoud"
+
+    2.change html element attr val
+        document.getElementById("one").style.fontSize="100"
+    document.getElementById("one").style.display="block"
+
+    ecma-262 ECMAScript
+*/
+
+
+/**
+ * take input
+ * prompt()
+ */
+/**
+ * number
+ * string
+ * undefind
+ * boolean
+ * object
+ */
+
+
+
+/**
+ * if
+ * switch(equality)
+ * break
+ * continue
+ * tricks on if
+ * = ==(compare value  ) === (compare value  and datatype )
+ * logical operators && ||
+ * conditional operators > >= < <= == !=
+ * 
+ * 
+ * for(var i=1;i<=10;i++)
+{
+    if(i==5)
+    {
+        console.log("welcome from 5");
+        continue;
+        console.log("welcom")
+    }
+    console.log("hi");
+}
+ */
+/**
+ * switch uses strict equality
+ * for/in property of obj
+ * for/of val of iteratable object(string)
+ */
+/**
+ * break
+ * continue
+ * labelName :
+ * 
+ */
+
+
+//statement func to sum
+/*
+function sum(num1,num2)
+{
+    var res=num1+num2;
+    return res;
+}*/
+
+//function declaration or function expression
+
+/**
+ * num1,num2 local variables
+ * return stop the executing after it
+ */
+
+/**
+ * var res=sum(5,10,12);
+console.log(res);//function result--1
+console.log(sum)//function object--2
+ * 1.will lead to 27
+ * 2.will lead to 
+        * (function sum(num1,num2,num3)
+        {
+            return num1+num2+num3;
+        })
+ */
+/**
+ * local var==>are  created when a function starts and deleted when the f
+ * function is completed
+ */
+
+//anonymous (without name) self invoking function    
+/**
+ * has no name
+ * can be returned in a variable as its value
+ * var x = (x,y) => {  return x*y };//arrow function
+
+function x(num1,num2)//listed names
+{
+    if(num2===undefined)//value of undefined is null datatype is undefind
+        num2=10         //datatype of null is object
+    return num1+num2;
+}
+console.log(x("5",null));//values for the listed names
+ */
+/**
+ * js functions has a built in object called arguments which contain
+ * an array of numbers used when invoking the function
+ 
+ function findMax(x,y)
+ {
+     var max = -Infinity;
+     for(var i=0 ; i<arguments.length; i++)
+     {
+         if(arguments[i]>max)
+            max=arguments[i];
+
+     }
+     return max;
+ }
+
+ console.log(findMax(10,20,30,40))
+ */
+
+ /**
+  * object
+  * var objName={property:val,..,..}
+  * obj can contain anthor object
+  * obj can contain function
+  * ----------------------------
+  * Array
+  * syntax
+  * built-in methods
+  * sort(),push(val1,val2,..),pop(),slice(start,end+1),
+  * splice(location,numOfValues,addedVal(optional),addedVal(optional)),
+  * unshift(val1,val2,...)-->add to first,shift()-->delete from first,length,indexOf("val")
+  * array can contain object
+  * 
+  */
+
+  /**
+ * objects of the same type are not compared
+ */
+/**
+ * indices from l to r(0 1 2 3 .....)
+ * indices from r to l(negative)(-1 -2 -3 -4 ...)
+ * slice(s,e+1)
+ * substr(s,#ofCharacters)
+ * subString(s,e+1)
+ * charAt
+ * charAtCode
+ * str[index]
+ * 
+ */
+//var str=`mahmoud   muhammed muhammed
+//dessoki`
+
+/*console.log(str.length);
+console.log(str.indexOf("muhammed"));
+console.log(str.search("muhammed"));
+console.log(str.lastIndexOf("muhammed",10));*/
+//var sub=str.slice(-10,-5);
+//var sub=str.substring(1,3);
+//var sub=str.substr(1,2);
+//var sub=str.slice(10);
+//var sub=str.slice(-10);
+//var sub=str.substring(5);
+//var sub=str.substr(-10,2);
+//var str2=str.replace(/muhammed/g,"desssoki")
+/*var str3=str.trim();
+console.log(str3)
+
+var x="5";
+x=x.padEnd(70)
+console.log(x.concat("5"))
+console.log("hello")*/
+
+/*
+var str="Ahmed muhammed"
+
+//console.log(str.slice(1,3).toUpperCase())
+//console.log(str[0])
+//console.log(str.charCodeAt(0))
+
+var str2=str.split(",")
+str2[1]="m"
+console.log(str2[1])*/
+
+/*
+var arr=["Ahmed","muhammed","dessoki"];
+
+var subarr=arr.slice(0,2);
+console.log(subarr.toString())
+var x=""
+x=subarr
+console.log(x)
+
+class user
+{
+    constructor(name,age,year,id,salary)
+    {
+        this.name=name;
+        this.age=age;
+        this.year=year;
+        this.id=id;
+    }
+
+    walk()
+    {
+        console.log("welcome from walk")
+    }
+}
+
+class Employee extends user
+{
+    constructor(name,age,year,id,salary)
+    {
+        super(name,age,year,id)
+        this.salary=salary;
+    }
+}
+
+
+let Emp= new Employee("ahmed",25,10,1000,2000)
+
+console.log(Emp.walk())
+
+
+*/
+
+/**
+ * DB(of any type)==>JSON==>
+ *  1.web
+ *  2.Android
+ *  3.Ios
+ */
+
+
+/*
+    API===>application programming interface
+
+    AJAX==>Asynchronouns js and xml
+
+    URL
+
+
+
+*/
+
+/**
+ * Objects to perform this task
+ *  ActiveXObjext==>microsoft==>has many problems
+ *  xmlHttpRequest==>built in object in js
+ */
+/**
+ * status==>
+ *  404==>not found(url is wrong)
+ *  403==>forbidden(url is right by you arent allowed)
+ *  200==>ok(url is correct and you are allowed)
+ * state==>
+ *  0-->no connection
+ *  1-->connection is established
+ *  2--> request received
+ *  3-->request processing
+ *  4-->data ready
+ */
+//synchrounons==>متتالي
+//asynchrounons==>متوازي
+/*getCats()
+function getCats()
+{
+    var http2= new XMLHttpRequest();
+    http2.open("GET", "https://www.themealdb.com/api/json/v1/1/categories.php")
+    http2.send()
+    http2.addEventListener("readystatechange",function(){
+    if(http2.status == 200 && http2.readyState == 4)
+    {
+        allcats=JSON.parse(http2.response).categories;
+       concatToNav()
+    }
+
+})  
+}*/
+/*function getMeals()
+{
+    var http= new XMLHttpRequest();
+    http.open("GET", "https://www.themealdb.com/api/json/v1/1/filter.php?c="+categoery)
+    http.send()
+    http.addEventListener("readystatechange",function(){
+    if(http.status == 200 && http.readyState == 4)
+    {
+        allMeals = JSON.parse(http.response).meals//array of objects
+        displayMeals()
+    }
+})  
+}*/
+
+//i got by search but i dont understand
+//$(document).on('click','.nav-link',display)
